@@ -1,21 +1,22 @@
-const rHeading = React.createElement('h3',{id:'heading'},'This is from React')
-const bind2 = ReactDOM.createRoot(document.getElementById('root'))
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+const Title =()=> <h1>Check the jsx code🚀</h1>
 
 
-
-const parent = React.createElement('div',{id:'parents'}, 
-    [
-        React.createElement('div',{id:'childs'},[
-            React.createElement('h2',{id:'childs'},'What s this'),
-            React.createElement('h2',{id:'childs'},'What s this'),
-        ]),
-        React.createElement('div',{id:'childs'},[
-            React.createElement('h2',{id:'childs'},'What s this'),
-            React.createElement('h2',{id:'childs'},'What s this'),
-        ])
-    ]
+const Heading = ()=> {
+    return (
+        <div id='container'>
+        <Title/>
+        <h1>This content from functional component🚀</h1>
+    </div>
+    )
+}
+   
     
-)
 
-bind2.render(parent)
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(<Heading/>)
 

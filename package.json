@@ -2,8 +2,9 @@
   "name": "javascript",
   "version": "1.0.0",
   "description": "This demo js for knowledge by Suresh",
-  "main": "app.js",
   "scripts": {
+    "start":"parcel index7.html",
+    "build":"parcel build index7.html",
     "test": "jest"
   },
   "repository": {
@@ -21,6 +22,11 @@
   },
   "homepage": "https://github.com/5uresh/React_repo#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
