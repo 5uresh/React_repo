@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/5uresh/React_repo/issues"
   },
-  "homepage": "https://github.com/5uresh/React_repo#readme"
+  "homepage": "https://github.com/5uresh/React_repo#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
