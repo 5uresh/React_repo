@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "This demo js for knowledge by Suresh",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5uresh/React_repo.git"
+  },
+  "keywords": [
+    "React",
+    "Javascript"
+  ],
+  "author": "Suresh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5uresh/React_repo/issues"
+  },
+  "homepage": "https://github.com/5uresh/React_repo#readme"
+}
