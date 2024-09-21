@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse handling</title>
+</head>
+<body>
+    <p id="pchange">Click to change the text </p>
+    <button id="btnchange">click me</button>
+
+    <div id="mousevent">
+        Hover me
+    </div>
+
+    <script>
+        const mHover = document.getElementById('mousevent')
+        mHover.addEventListener('mouseover',function(){
+            mHover.textContent="Mouse Hover"
+        })
+        mHover.addEventListener('mouseout',function(){
+            mHover.textContent="Hover me"
+        })
+
+
+        const pelement = document.getElementById('pchange')
+        const belement = document.getElementById('btnchange')
+
+        belement.addEventListener('click',function (){
+            pelement.textContent = "Change the p text"
+        })
+    </script>
+</body>
+</html>

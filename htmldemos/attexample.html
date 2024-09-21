@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Example</title>
+</head>
+<body>
+    <div id="eleAtt" data-info="This is the information of div element">
+
+    </div>
+
+    <script>
+       const attElement =  document.getElementById('eleAtt')
+       attElement.setAttribute('data-info','Update Text')
+       console.log(attElement.getAttribute("data-info"));
+       
+    </script>
+</body>
+</html>

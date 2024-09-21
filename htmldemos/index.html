@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Document</title>
+</head>
+<body>
+    <h1>JS Variables</h1>
+
+    <script>
+        const person = {
+        name:'suresh',
+        age:14
+}
+person.age=32
+console.log(person);
+
+
+const car=['w','e','r']
+car.push('d')
+console.log(car)
+
+
+const promise = new Promise((resolve,reject)=>{
+    setTimeout(reject('we have failed'),2000)
+	setTimeout(()=>{let user={name:'water'};resolve('completed')},6000)
+})
+console.log(promise)
+
+
+function fetchData(){
+	return new Promise(resolve =>{
+  	setTimeout(()=>{
+    	resolve('Data Successfully fetched')
+    },4000)
+  })
+}
+
+function processData(){
+	fetchData()
+  .then(data=>{
+  console.log(data)
+  })
+  .catch(error=>{console.log(error)})
+}
+
+processData()
+    </script>
+
+</body>
+</html>

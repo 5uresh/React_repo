@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard event Example</title>
+</head>
+<body>
+    <label for="textInput">Type Something:</label>
+    <input type="text" id="textInput">
+
+    <script>
+        const textElement = document.getElementById('textInput')
+        textElement.addEventListener('keydown', function(event){
+            console.log("keyBoard Pressed :" + event.key)
+        })
+    </script>
+</body>
+</html>

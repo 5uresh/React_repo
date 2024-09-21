@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler Example</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Event Handler Example</h1>
+        <button onclick="alert('Clicked !')">Click Me</button>
+
+        <button onclick="clik()">Click</button>
+
+        <button id="btnclick">Click</button>
+
+    </div>
+
+    <script>
+        function clik(){
+            alert('by function')
+        }
+
+        const btnalert = document.getElementById('btnclick')
+        btnalert.addEventListener('click', function(event){
+            alert('clicked by the addeventlistener'+ event.type)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    
+    <div id="rvele" data-info="information about div">
+            <p>This element wil be deleted by clicking button</p>
+    </div>
+    <button onclick="removeElement()">Click</button>
+    <script>
+        function removeElement(){
+           const rmEle =  document.getElementById('rvele')
+           console.log(rmEle.getAttribute("data-info"))
+           rmEle.remove()
+        }
+
+        
+
+       const createhtag =  document.createElement('h1')
+       createhtag.textContent = "created h1 tag"
+       document.body.appendChild(createhtag)
+
+       const btntag = document.createElement('button')
+       btntag.textContent = 'pbutton'
+       createhtag.appendChild(btntag)
+    </script>
+</body>
+
+
+</html>

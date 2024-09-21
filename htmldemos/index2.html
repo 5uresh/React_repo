@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .exampleClass{
+        color: blue;
+    }
+</style>
+<body>
+    <!-- <p id="message">paragraph</p>
+    <p name = "ex1">This first</p>
+    <p name = "ex1">This is Second</p> -->
+    <p class="exampleClass">first</p>
+    <p class="exampleClass">second</p>
+    <p >without class</p>
+    <h1>Test one</h1>
+    <h1>Test two</h1>
+    <h1>Test three</h1>
+    <button>Click one</button>
+    <button>Click Two</button>
+    <button>Click Three</button>
+
+    <script>
+    //    const ele = document.getElementById("message")
+    //     ele.innerText = "This is innerText"
+    //     ele.innerHTML = "<button>Click</button>"
+    //     const te = document.getElementsByName("ex1")
+    //     console.log(te[1])
+
+    //     for (let index = 0; index < te.length; index++) {
+    //         const element = te[index];
+    //         element.innerText='sweet and salt'
+            
+    //     }
+        const exClass = document.getElementsByClassName('exampleClass')
+        //console.log(exClass[1])
+
+        for (let index = 0; index < exClass.length; index++) {
+            const element = exClass[index];
+             element.textContent = "Check this"
+             element.style.fontWeight = "bold"
+
+        }
+
+
+       const h1ele =  document.getElementsByTagName('h1')
+       for (let index = 0; index < h1ele.length; index++) {
+        const element = h1ele[index];
+        element.textContent="H1 tag "+(index+1)
+        
+       }
+
+       const btnele = document.getElementsByTagName('button')
+       for (let index = 0; index < btnele.length; index++) {
+        const element = btnele[index];
+        element.textContent = "button tag" + (index+1)
+        
+       }
+
+    </script>
+</body>
+</html>
